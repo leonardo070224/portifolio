@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jomhuria&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kaisei+Decol:wght@400;500;700&family=Kaisei+Tokumin:wght@400;500;700;800&family=Russo+One&display=swap');
+
+:root {
+    --background-color: #2c2f33;
+    --text-color: #ffffff;
+    --primary-color: #092d5c;
+    --secondary-color: #0a1d61;
+}
+
+.light-mode {
+    --background-color: #f0f2f5;
+    --text-color: #333333;
+    --primary-color: #092d5c;
+    --secondary-color: #0a1d61;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sou{
+    text-align: center;
+}
+
+.logo{
+    color: white;
+}
+
+.theme-button {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.sobre-mim {
+    display: flex;
+    padding: 2rem;
+    align-items: center;
+}
+
+.perfil-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.perfil-info{
+    width: 50%;
+}
+
+.perfil-info p {
+    margin: 0.5rem 0;
+}
+
+.perfil-img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.perfil-img img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 3px #7289da;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-link {
+    padding: 0.5rem;
+    color: white;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.social-link svg{
+    fill: white;
+}
+
+.habilidades-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.habilidades-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidade {
+    padding: 1rem;
+    border: 1px solid var(--secondary-color);
+    width: 200px;
+    text-align: center;
+}
+
+.habilidade p{
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .perfil-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.habilidades-section {
+    padding: 2rem;
+    text-align: center;
+}
+
+.habilidades-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.habilidade {
+    padding: 1rem;
+    width: 250px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.habilidade p {
+    margin: 0;
+}
+
+
+.projetos-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.projetos-section h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.projetos-section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.carousel-caption {
+    margin-top: 5vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.carousel-caption img{
+    width: 600px;
+    max-width: 90%;
+}
+
+.contato-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--background-color);
+}
+
+.contato-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.contato-info{
+    max-width: 100%;
+}
+
+.contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contato-form input, .contato-form textarea, .contato-form button {
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid var(--text-color);
+}
+
+.contato-form label{
+    text-align: left;
+}
+
+.contato-form textarea {
+    resize: vertical;
+}
+
+.contato-form button {
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.8rem;
+    }
+
+    .contato-info {
+        font-size: 0.9rem;
+    }
+
+    .contato-form input, .contato-form textarea {
+        font-size: 0.9rem;
+    }
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+}
